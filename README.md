@@ -97,7 +97,7 @@ Save plots as `experiment_2a.png`, `experiment_2b.png`, `experiment_2c.png`.
 
 | mutation_rate | Final best value | Weight (kg) | Valid? | Shape of curve |
 |--------------|-----------------|-------------|--------|----------------|
-| 0.01         |                 |             |        |                |
+| 0.01         |    75           |14.9/15.0 kg |  Yes   |Rapid early improvement then flat|
 | 0.05         |                 |             |        |                |
 | 0.30         |                 |             |        |                |
 
