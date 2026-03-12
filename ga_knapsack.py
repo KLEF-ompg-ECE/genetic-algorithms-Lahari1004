@@ -258,3 +258,20 @@ if __name__ == "__main__":
     print_solution(chr2a)
     print(f"  Final best value: {val2a}")
     save_plot(vl2a, "plots/experiment_2a.png", "mutation_rate=0.01")
+
+    # ======================================================================
+    # EXPERIMENT 2B — mutation_rate = 0.05
+    # ======================================================================
+    print("=" * 48)
+    print("  EXPERIMENT 2B - mutation_rate = 0.05")
+    print("=" * 48)
+
+    chr2b, val2b, vl2b = run_ga(
+        population_size=20, generations=50,
+        crossover_rate=0.8, mutation_rate=0.05,
+        tournament_size=3, seed=42
+    )
+
+    print_solution(chr2b)
+    print(f"  Final best value: {val2b}")
+    save_plot(vl2b, "plots/experiment_2b.png", "mutation_rate=0.05")

@@ -98,7 +98,7 @@ Save plots as `experiment_2a.png`, `experiment_2b.png`, `experiment_2c.png`.
 | mutation_rate | Final best value | Weight (kg) | Valid? | Shape of curve |
 |--------------|-----------------|-------------|--------|----------------|
 | 0.01         |    75           |14.9/15.0 kg |  Yes   |Rapid early improvement then flat|
-| 0.05         |                 |             |        |                |
+| 0.05         |    77           |14.4/15.0 kg |  Yes   |Fast rise then gradual plateau.|
 | 0.30         |                 |             |        |                |
 
 **Compare the three plots. What happens when mutation is too low? Too high? (3–4 sentences)**  
