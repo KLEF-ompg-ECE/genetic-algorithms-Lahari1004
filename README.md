@@ -99,17 +99,17 @@ Save plots as `experiment_2a.png`, `experiment_2b.png`, `experiment_2c.png`.
 |--------------|-----------------|-------------|--------|----------------|
 | 0.01         |    75           |14.9/15.0 kg |  Yes   |Rapid early improvement then flat|
 | 0.05         |    77           |14.4/15.0 kg |  Yes   |Fast rise then gradual plateau.|
-| 0.30         |                 |             |        |                |
+| 0.30         |    78           |14.1/15.0 kg |  Yes   |Gradual rise with stepwise improvements, then plateau.|
 
 **Compare the three plots. What happens when mutation is too low? Too high? (3–4 sentences)**  
 *Hint: Too low = no diversity, may get stuck. Too high = random search. What is the sweet spot?*
 ```
-[ YOUR OBSERVATION ]
+When mutation is too low (0.01), the algorithm improves early but quickly gets stuck due to low diversity. When mutation is too high (0.30), the search becomes more random and improvements are slower, while a moderate rate (0.05) balances exploration and convergence.
 ```
 
 **Which mutation_rate gave the best result? Why do you think that is?**
 ```
-[ YOUR ANSWER ]
+The mutation rate of 0.30 gave the best final value (78). This may happen because the higher mutation introduces more diversity in the population, allowing the algorithm to explore more possible combinations and eventually find a slightly better solution. However, it also causes slower convergence compared to the moderate mutation rate.
 ```
 
 ---
