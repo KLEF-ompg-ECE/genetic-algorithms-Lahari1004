@@ -1,9 +1,9 @@
 # Assignment 2 — Genetic Algorithm: Knapsack Problem
 ## Observation Report
 
-**Student Name  :** ___________________________  
-**Student ID    :** ___________________________  
-**Date Submitted:** ___________________________  
+**Student Name  :** Dasari Lahari 
+**Student ID    :** 2310040036
+**Date Submitted:** 11-03-2026
 
 ---
 
@@ -23,13 +23,13 @@ Open `ga_knapsack.py` and read through it. Then answer these questions.
 **Q1. What does the `fitness()` function return? Why does an overweight solution score 0?**
 
 ```
-[ YOUR ANSWER — 2 to 3 sentences ]
+The fitness() function calculates the total value of the selected items in the knapsack. If the total weight exceeds the maximum allowed weight, the function returns 0. This prevents the genetic algorithm from selecting invalid solutions that exceed the weight limit.
 ```
 
 **Q2. What does `tournament_select()` do? Why are higher-fitness individuals more likely to be chosen?**
 
 ```
-[ YOUR ANSWER — 2 to 3 sentences ]
+The tournament_select() function randomly selects a small group of individuals from the population and chooses the one with the highest fitness. This means better solutions have a higher chance of being selected. 
 ```
 
 **Q3. Look at the `run_ga()` loop. Find this line:**
@@ -39,7 +39,7 @@ next_gen = [best_chromosome[:]]
 **What is this doing? Why is it important to always keep the best solution?**
 
 ```
-[ YOUR ANSWER — 2 to 3 sentences ]
+The line next_gen = [best_chromosome[:]] copies the best solution from the current generation to the next generation. It ensures that the best solution found so far is never lost during crossover or mutation.
 ```
 
 ---
@@ -55,21 +55,34 @@ python ga_knapsack.py
 
 | Metric | Your result |
 |--------|-------------|
-| Number of generations | |
-| Best value at generation 1 | |
-| Final best value | |
-| Total weight of best solution (kg) | |
-| Is solution valid (Yes / No) | |
+| Number of generations |50|
+| Best value at generation 1 |60|
+| Final best value |77|
+| Total weight of best solution (kg) |14.4/15.0 kg|
+| Is solution valid (Yes / No) | Yes|
 
 **Copy the printed packing list here:**
 ```
-[ PASTE PACKING LIST OUTPUT HERE ]
+Best Packing List
+--------------------------------------
+  + Water bottle
+  + First aid kit
+  + Sleeping bag
+  + Torch
+  + Energy bars (x6)
+  + Rain jacket
+  + Map & compass
+  + Cooking stove
+  + Rope (10 m)
+  + Sunscreen
+  + Power bank
+--------------------------------------
 ```
 
 **Look at `plots/experiment_1.png` and describe what you see (2–3 sentences).**  
 *Where does the biggest improvement happen? Does the curve flatten at some point?*
 ```
-[ YOUR OBSERVATION ]
+The biggest improvement happens in the first few generations, where the best value quickly increases from around 60 to about 75. After that, the improvements become smaller and the curve rises slowly until it reaches about 77. The curve then flattens, showing that the genetic algorithm has converged and found a near-optimal solution.
 ```
 
 ---
