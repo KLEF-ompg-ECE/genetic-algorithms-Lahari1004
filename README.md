@@ -120,21 +120,21 @@ The mutation rate of 0.30 gave the best final value (78). This may happen becaus
 
 | Experiment | Key setting | Final value | Main finding in one sentence |
 |------------|-------------|-------------|------------------------------|
-| 1 — Baseline | mutation_rate = 0.05 | | |
-| 2 — Mutation rate | mutation_rate = ___ | | |
+| 1 — Baseline | mutation_rate = 0.05 | 77|Fast improvement then stable convergence. |
+| 2 — Mutation rate | mutation_rate = 0.30|78 | Higher mutation found a slightly better solution.|
 
 **In your own words — what is the most important thing you learned about Genetic Algorithms from these experiments? (3–5 sentences)**
 ```
-[ YOUR REFLECTION ]
+Genetic Algorithms improve solutions gradually over generations by selecting better individuals and introducing variation through mutation and crossover. I learned that the mutation rate strongly affects the search behavior of the algorithm. If the mutation rate is too low, the algorithm may get stuck because there is not enough diversity in the population. If it is too high, the search becomes more random and convergence slows down. A balanced mutation rate helps the algorithm explore new solutions while still improving efficiently.
 ```
 
 ---
 
 ## Submission Checklist
 
-- [ ] Student name and ID filled in
-- [ ] Q1, Q2, Q3 answered
-- [ ] Experiment 1: table filled, packing list pasted, plot observation written
-- [ ] Experiment 2: results table filled (3 rows), observation and answer written
-- [ ] Summary table completed and reflection written
-- [ ] `plots/` contains: `experiment_1.png`, `experiment_2a.png`, `experiment_2b.png`, `experiment_2c.png`
+- [x] Student name and ID filled in
+- [x] Q1, Q2, Q3 answered
+- [x] Experiment 1: table filled, packing list pasted, plot observation written
+- [x] Experiment 2: results table filled (3 rows), observation and answer written
+- [x] Summary table completed and reflection written
+- [x] `plots/` contains: `experiment_1.png`, `experiment_2a.png`, `experiment_2b.png`, `experiment_2c.png`
