@@ -109,3 +109,12 @@ The mutation rate of **0.30** produced the best final value of 78. Higher mutati
 **In your own words — what is the most important thing you learned about Genetic Algorithms from these experiments?**
 
 The most important thing I learned about Genetic Algorithms is how parameters like mutation rate affect the search process. Mutation helps maintain diversity so the algorithm does not get stuck in poor solutions. However, too much mutation can make the search random and slow convergence. A balanced mutation rate helps the algorithm explore new possibilities while still improving good solutions.
+
+## Submission Checklist
+
+- [x] Student name and ID filled in
+- [x] Q1, Q2, Q3 answered
+- [x] Experiment 1: table filled, packing list pasted, plot observation written
+- [x] Experiment 2: results table filled (3 rows), observation and answer written
+- [x] Summary table completed and reflection written
+- [x] plots/ contains: experiment_1.png, experiment_2a.png, experiment_2b.png, experiment_2c.png
