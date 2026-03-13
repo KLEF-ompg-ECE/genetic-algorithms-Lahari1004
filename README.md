@@ -59,21 +59,21 @@ python ga_knapsack.py
 | Best value at generation 1 |60|
 | Final best value |77|
 | Total weight of best solution (kg) |14.4/15.0 kg|
-| Is solution valid (Yes / No) | Yes|
+| Is solution valid (Yes / No) | Yes |
 
 **Copy the printed packing list here:**
 ```
-Best Packing List
+   Best Packing List
 --------------------------------------
   + Water bottle
   + First aid kit
-  + Sleeping bag
+  + Tent
   + Torch
   + Energy bars (x6)
   + Rain jacket
   + Map & compass
+  + Camera
   + Cooking stove
-  + Rope (10 m)
   + Sunscreen
   + Power bank
 --------------------------------------
@@ -82,7 +82,7 @@ Best Packing List
 **Look at `plots/experiment_1.png` and describe what you see (2–3 sentences).**  
 *Where does the biggest improvement happen? Does the curve flatten at some point?*
 ```
-The biggest improvement happens in the first few generations, where the best value quickly increases from around 60 to about 75. After that, the improvements become smaller and the curve rises slowly until it reaches about 77. The curve then flattens, showing that the genetic algorithm has converged and found a near-optimal solution.
+The biggest improvement happens during the first few generations when the value quickly increases from about 60 to around 75. After generation 10 the improvements become smaller. The curve then flattens, showing that the algorithm has converged to a near optimal solution.
 ```
 
 ---
@@ -104,12 +104,12 @@ Save plots as `experiment_2a.png`, `experiment_2b.png`, `experiment_2c.png`.
 **Compare the three plots. What happens when mutation is too low? Too high? (3–4 sentences)**  
 *Hint: Too low = no diversity, may get stuck. Too high = random search. What is the sweet spot?*
 ```
-When mutation is too low (0.01), the algorithm improves early but quickly gets stuck due to low diversity. When mutation is too high (0.30), the search becomes more random and improvements are slower, while a moderate rate (0.05) balances exploration and convergence.
+When the mutation rate is very low (0.01), the algorithm improves quickly at first but then gets stuck because the population loses diversity. With a moderate mutation rate (0.05), the algorithm balances exploration and exploitation and converges smoothly. When the mutation rate is very high (0.30), the search becomes more random and convergence is slower, although it may still find a good solution.
 ```
 
 **Which mutation_rate gave the best result? Why do you think that is?**
 ```
-The mutation rate of 0.30 gave the best final value (78). This may happen because the higher mutation introduces more diversity in the population, allowing the algorithm to explore more possible combinations and eventually find a slightly better solution. However, it also causes slower convergence compared to the moderate mutation rate.
+The mutation rate of 0.30 produced the best final value of 78. The higher mutation introduces more diversity into the population, which helps the algorithm explore more combinations of items. This allowed the algorithm to discover a slightly better solution than the other mutation rates.
 ```
 
 ---
@@ -125,7 +125,7 @@ The mutation rate of 0.30 gave the best final value (78). This may happen becaus
 
 **In your own words — what is the most important thing you learned about Genetic Algorithms from these experiments? (3–5 sentences)**
 ```
-Genetic Algorithms improve solutions gradually over generations by selecting better individuals and introducing variation through mutation and crossover. I learned that the mutation rate strongly affects the search behavior of the algorithm. If the mutation rate is too low, the algorithm may get stuck because there is not enough diversity in the population. If it is too high, the search becomes more random and convergence slows down. A balanced mutation rate helps the algorithm explore new solutions while still improving efficiently.
+The most important thing I learned about Genetic Algorithms is how parameters such as mutation rate affect the search process. Mutation helps maintain diversity in the population so that the algorithm does not get stuck in poor solutions. However, too much mutation can make the search too random and slow convergence. A balanced mutation rate helps the algorithm explore new possibilities while still improving good solutions over generations.
 ```
 
 ---
